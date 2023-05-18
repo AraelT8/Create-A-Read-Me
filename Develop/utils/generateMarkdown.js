@@ -1,5 +1,6 @@
+// created an array that holds the possible licenses for the user to choose from
 const licenses = ["MIT", "Apache", "GPL", "BSD", "None"];
-
+// switch statement that takes the user's license choice and returns the appropriate badge
 function renderLicenseBadge(license) {
   switch (license){
     case licenses[0]:
@@ -14,7 +15,7 @@ function renderLicenseBadge(license) {
       return ``
   }
 }
-
+// switch statement that takes the user's license choice and returns the appropriate link
 function renderLicenseLink(license) {
   switch (license){
     case licenses[0]:
@@ -29,7 +30,7 @@ function renderLicenseLink(license) {
       return ``
   }
 }
-
+// switch statement that takes the user's license choice and returns the appropriate section
 function renderLicenseSection(license) {
   switch (license){
     case licenses[0]:
@@ -44,7 +45,7 @@ function renderLicenseSection(license) {
       return ``
   }
 }
-
+// function that takes the user's input and returns the readme file
 function generateMarkdown(data) {
   return `# ${data.title}
   ## Badges
